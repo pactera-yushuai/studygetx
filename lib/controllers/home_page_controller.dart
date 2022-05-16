@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class Controller extends GetxController {
+class HomePageController extends GetxController {
   var counter = 0.obs;
 
   void incrementCounter() {
