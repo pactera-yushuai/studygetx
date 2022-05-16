@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:studygetx/pages/getx_home2_page.dart';
+import 'package:studygetx/controllers/home_page_controller.dart';
 
-import '../controllers/home_page_controller.dart';
+class GetxHome2Page extends StatelessWidget {
+  // const GetxHome2Page({Key? key}) : super(key: key);
 
-class GetxHomePage extends StatelessWidget {
-  const GetxHomePage({Key? key}) : super(key: key);
+  final HomePageController homePageController = Get.find();
 
   @override
   Widget build(BuildContext context) {
-    var homePageController = Get.put(HomePageController());
-
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
@@ -46,12 +44,6 @@ class GetxHomePage extends StatelessWidget {
                 style: Theme.of(context).textTheme.headline4,
               ),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Get.to(GetxHome2Page());
-              },
-              child: const Text('下一页'),
-            )
           ],
         ),
       ),
