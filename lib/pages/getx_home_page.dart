@@ -42,7 +42,7 @@ class GetxHomePage extends StatelessWidget {
             ),
             Obx(
               () => Text(
-                '${homePageController.counter}',
+                homePageController.counter.string,
                 style: Theme.of(context).textTheme.headline4,
               ),
             ),
